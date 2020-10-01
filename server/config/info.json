@@ -1,0 +1,7 @@
+{
+    "mongoDBUrl": "mongodb://localhost:27017",
+    "dataBase": "dachuang",
+    "serverUrl": "ipAddress||www.xxx.com",
+    "privateKey": "yltnzylsj",
+    "mongoSURL": "mongodb://nzy:50bb1ca7a1722dc6@localhost:27017/dachuang?authSource=admin"
+}
