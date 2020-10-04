@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/login/index",
     "pages/index/index"
   ],
   "subPackages": [],
@@ -7,8 +8,7 @@
     "navigationBarBackgroundColor": "#0081ff",
     "navigationBarTitleText": "ColorUi for UniApp",
     "navigationStyle": "custom",
-    "navigationBarTextStyle": "white"
+    "navigationBarTextStyle": "black"
   },
-  "usingComponents": {},
-  "sitemapLocation": "sitemap.json"
+  "usingComponents": {}
 }

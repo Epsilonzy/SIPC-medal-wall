@@ -1,6 +1,195 @@
-.test.data-v-57280228 {
+.container.data-v-57280228 {
+  min-height: 100vh;
+  background-color: #737373;
+}
+.navbar.data-v-57280228 {
+  color: black !important;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.showBox.data-v-57280228 {
   width: 100%;
   height: 100px;
-  background-color: blue;
+  background-image: -webkit-linear-gradient(45deg, #26b2e7, #4990e2);
+  background-image: linear-gradient(45deg, #26b2e7, #4990e2);
+}
+.cu-tag.round.data-v-57280228 {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+}
+.leftBox.data-v-57280228 {
+  float: left;
+  margin-top: 20px;
+  margin-left: 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+}
+.leftBox > ._p.data-v-57280228 {
+  color: white;
+  font-size: 18px;
+}
+.leftBox > view.data-v-57280228 {
+  margin-top: 10px;
+  font-size: 14px;
+}
+.leftBox > view > ._span.data-v-57280228 {
+  margin-left: 5px;
+}
+.leftBox > .synBtn.data-v-57280228 {
+  width: 60px;
+  height: 20px;
+}
+.rightBox.data-v-57280228 {
+  float: right;
+  margin-top: 10px;
+  margin-right: 40px;
+  color: white;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+.rightBox > ._p.data-v-57280228 {
+  margin-top: 5px;
+  font-size: 14px;
+}
+.rightBox > view.data-v-57280228 {
+  margin: auto;
+}
+.tag.data-v-57280228 {
+  background-color: white;
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  color: #b6c4ce;
+}
+.medalShow.data-v-57280228 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: space-around;
+          justify-content: space-around;
+}
+.medalShow > .medal.data-v-57280228 {
+  margin: 10px 0;
+}
+.medalShow > .medal > .test.data-v-57280228 {
+  background-color: black;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+.medalShow > .medal > ._img.data-v-57280228 {
+  background-color: black;
+  width: 100px;
+  height: 100px;
+}
+.medalShow > .medal > ._p.data-v-57280228 {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 12px;
+  color: white;
+}
+.showMedalDetails.data-v-57280228:before {
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+}
+.showMedalDetails.data-v-57280228 {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 99;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.showMedalDetails > .box.data-v-57280228 {
+  position: relative;
+  z-index: 100;
+  background-image: -webkit-linear-gradient(45deg, #0081ff, #1cbbb4);
+  background-image: linear-gradient(45deg, #0081ff, #1cbbb4);
+  margin: auto;
+  width: 250px;
+  padding: 10px;
+  background-color: white;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+}
+.showMedalDetails > .box > ._h2.data-v-57280228 {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+.showMedalDetails > .box .closeIcon.data-v-57280228 {
+  border: 1px white solid;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  font-size: 24px;
+  position: absolute;
+  top: -40px;
+  right: -10px;
+}
+.showMedalDetails > .box .test.data-v-57280228 {
+  width: 140px;
+  height: 140px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-color: black;
+  margin: 10px auto 0;
+}
+.showMedalDetails > .box > ._img.data-v-57280228 {
+  width: 140px;
+  height: 140px;
+  background-color: black;
+  margin: 10px auto;
+  display: block;
+}
+.showMedalDetails > .box .medalName.data-v-57280228 {
+  margin-top: 5px;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+}
+.showMedalDetails > .box .content.data-v-57280228 {
+  color: white;
+  margin: 10px 20px;
+  word-break: break-all;
+}
+.showMedalDetails > .box .shareBtn.data-v-57280228 {
+  margin: 10px auto;
+  background-color: #ff9947;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  padding: 5px 5px;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: 600;
 }
 

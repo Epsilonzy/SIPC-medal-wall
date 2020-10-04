@@ -15,42 +15,30 @@ mongoose.connect(`${config.mongoDBUrl}/${config.dataBase}`, {
 
 //用户个人信息的表
 const users = mongoose.Schema({
-    userId: {
+    phoneNum: {
         type: String,
         required: true,
         unique: true
-    },
-    phoneNum: {
-        type: String,
-        required: true
     },
     password: {
         type: String,
         required: true
     },
-    avatarImg: {
-        type: String,
-        default: 'static/image/default-avatar.jpg',
-        set(url) {
-            if (url.search("static/") == -1) {
-                return `static/image/${url}`;
-            } else {
-                return 'static/image/default-avatar.jpg';
-            }
-        }
-    },
     gender: String,
-    name: String,
+    name: {
+        type: String,
+        required: true
+    },
     age: {
         type: Number,
         min: 0,
-        max: 150
+        max: 100
     }
 });
 
 //新闻页面的表
-const news = mongoose.Schema({
-    newsId: {
+const medals = mongoose.Schema({
+    medalsId: {
         type: String,
         required: true,
         unique: true
@@ -66,5 +54,5 @@ const news = mongoose.Schema({
 
 module.exports = {
     Users: mongoose.model('users', users),
-    News: mongoose.model('news', news)
+    Medals: mongoose.model('medals', medals)
 }
