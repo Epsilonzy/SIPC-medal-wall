@@ -15,14 +15,12 @@ mongoose.connect(`${config.mongoDBUrl}/${config.dataBase}`, {
 
 //用户个人信息的表
 const users = mongoose.Schema({
-    phoneNum: {
-        type: String,
-        required: true,
-        unique: true
-    },
-    password: {
+    phoneNumber: {
         type: String,
         required: true
+    },
+    password: {
+        type: String
     },
     gender: String,
     name: {
@@ -33,26 +31,40 @@ const users = mongoose.Schema({
         type: Number,
         min: 0,
         max: 100
-    }
+    },
+    getMedals: Array, //存放已获得勋章的ID
+    getMedalsNew: Array,
+    isStd: {
+        type: Number,
+        default: 1
+    } //存放新获得勋章的ID
 });
 
 //新闻页面的表
 const medals = mongoose.Schema({
-    medalsId: {
+    medalId: {
         type: String,
         required: true,
-        unique: true
     },
-    title: String,
-    content: Array,
-    pubDate: String,
-    type: String,
-    imgUrl: String,
-    tag: Array,
-    puber: String
+    medalName: String,
+    content: String, //勋章详情
+    imgUrl: String, //勋章url
+    weight: Number //排名权值
+});
+
+const admin = mongoose.Schema({
+    username: {
+        type: String,
+        required: true
+    },
+    password: {
+        type: String,
+        required: true
+    }
 })
 
 module.exports = {
     Users: mongoose.model('users', users),
-    Medals: mongoose.model('medals', medals)
+    Medals: mongoose.model('medals', medals),
+    Admin: mongoose.model('admin', admin)
 }

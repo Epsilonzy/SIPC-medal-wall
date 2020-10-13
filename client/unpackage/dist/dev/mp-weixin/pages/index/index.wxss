@@ -1,6 +1,29 @@
+.borderTop.data-v-57280228 {
+  width: 100%;
+  height: 20px;
+  background-color: white;
+  position: relative;
+}
+.borderTop.data-v-57280228:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  top: -50px;
+  background-color: white;
+  border-top-left-radius: 40%;
+  border-top-right-radius: 40%;
+}
+.small.data-v-57280228 {
+  font-size: 12px;
+}
+.big.data-v-57280228 {
+  font-size: 36px;
+}
 .container.data-v-57280228 {
   min-height: 100vh;
-  background-color: #737373;
+  background-color: white;
 }
 .navbar.data-v-57280228 {
   color: black !important;
@@ -9,9 +32,33 @@
 }
 .showBox.data-v-57280228 {
   width: 100%;
-  height: 100px;
-  background-image: -webkit-linear-gradient(45deg, #26b2e7, #4990e2);
-  background-image: linear-gradient(45deg, #26b2e7, #4990e2);
+  padding-top: 20px;
+  padding-bottom: 70px;
+  background-image: -webkit-linear-gradient(30deg, #0081ff, #1cbbb4);
+  background-image: linear-gradient(60deg, #0081ff, #1cbbb4);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: space-around;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.showBox > view.data-v-57280228 {
+  text-align: center;
+}
+.showBox > view > .small.data-v-57280228 {
+  margin-top: 5px;
+  letter-spacing: 1px;
+}
+.showBox > view > .name.data-v-57280228 {
+  margin-top: 5px;
+  letter-spacing: 1px;
 }
 .cu-tag.round.data-v-57280228 {
   background-color: rgba(0, 0, 0, 0.4);
@@ -86,12 +133,13 @@
           justify-content: space-around;
 }
 .medalShow > .medal.data-v-57280228 {
-  margin: 10px 0;
+  width: 50%;
+  margin: 20px 0;
+  text-align: center;
 }
 .medalShow > .medal > .test.data-v-57280228 {
   background-color: black;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
   width: 100px;
   height: 100px;
 }
@@ -99,12 +147,14 @@
   background-color: black;
   width: 100px;
   height: 100px;
+  margin: 0px auto;
 }
 .medalShow > .medal > ._p.data-v-57280228 {
   margin-top: 10px;
   text-align: center;
   font-size: 12px;
-  color: white;
+  color: black;
+  font-weight: 600;
 }
 .showMedalDetails.data-v-57280228:before {
   content: "";
@@ -135,10 +185,9 @@
   background-image: linear-gradient(45deg, #0081ff, #1cbbb4);
   margin: auto;
   width: 250px;
-  padding: 10px;
+  padding: 30px 20px;
   background-color: white;
-  -webkit-border-radius: 20px;
-          border-radius: 20px;
+  border-radius: 20px;
 }
 .showMedalDetails > .box > ._h2.data-v-57280228 {
   color: white;
@@ -147,8 +196,7 @@
 }
 .showMedalDetails > .box .closeIcon.data-v-57280228 {
   border: 1px white solid;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
   font-size: 24px;
   position: absolute;
   top: -40px;
@@ -157,8 +205,7 @@
 .showMedalDetails > .box .test.data-v-57280228 {
   width: 140px;
   height: 140px;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
   background-color: black;
   margin: 10px auto 0;
 }
@@ -179,13 +226,12 @@
   color: white;
   margin: 10px 20px;
   word-break: break-all;
+  font-size: 12px;
 }
 .showMedalDetails > .box .shareBtn.data-v-57280228 {
   margin: 10px auto;
   background-color: #ff9947;
-  -webkit-border-radius: 10px;
-          border-radius: 10px;
-  padding: 5px 5px;
+  border-radius: 10px;
   color: white;
   font-size: 16px;
   text-align: center;

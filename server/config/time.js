@@ -10,7 +10,7 @@ const isOverTime = (time) => {
         //未过期
         return false;
     } else {
-        //未过期
+        //已过期
         return true;
     }
 }

@@ -4,7 +4,9 @@ const Koa = require('koa'),
     bodyParser = require('koa-bodyparser'),
     app = new Koa(),
     router = new Router(),
-    formid = require('koa2-formidable');
+    formid = require('koa2-formidable'),
+    jwt = require('jsonwebtoken'),
+    fs = require('fs');
 
 //路由引入
 const getMedals = require('./routes/getMedals');
@@ -27,21 +29,25 @@ app.use(async(ctx, next) => {
 app.use(require('koa-static')(__dirname, 'static'));
 
 //全局路由配置
-app.use(formid());
+// app.use(formid());
 app.use(bodyParser());
 //配置路由
 app.use(router.routes()).use(router.allowedMethods);
 
 //路由
 
-
 //进行路由注册
+router.get('/', async ctx => {
+    let html = fs.readFileSync('./index.html');
+    ctx.body = html;
+    ctx.type = "text/html;charset=utf-8";
+})
 router.use('/getMedals', getMedals);
 router.use('/signIn', signIn);
 
 router.use('/admin', admin);
 
 //配置端口
-const port = process.env.PORT || 8082;
+const port = process.env.PORT || 8088;
 
 app.listen(port, '0.0.0.0', () => console.log(`server is running on port ${port}`));

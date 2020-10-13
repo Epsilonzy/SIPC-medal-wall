@@ -1,5 +1,5 @@
 {
-    "name" : "client",
+    "name" : "SIPC-medal",
     "appid" : "__UNI__84BBC54",
     "description" : "",
     "versionName" : "ColorUi for UniApp 2.1.4",
@@ -47,15 +47,17 @@
     "quickapp" : {},
     /* 快应用特有相关 */
     "mp-weixin" : {
-        /* 小程序特有相关 */
-        "appid" : "",
+        "appid" : "wx349d7672bb571b16",
         "setting" : {
             "urlCheck" : false,
             "es6" : true
         }
     },
     "h5" : {
-        "title" : "ColorUi for UniApp",
-        "domain" : "demo.color-ui.com"
+        "title" : "SIPC勋章墙",
+        "domain" : "",
+        "router" : {
+            "base" : "./"
+        }
     }
 }
